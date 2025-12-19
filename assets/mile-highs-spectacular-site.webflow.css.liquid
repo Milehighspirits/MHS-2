@@ -47,6 +47,22 @@
   --link-color--color: white;
 }
 
+.w-embed-youtubevideo {
+  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.w-embed-youtubevideo:empty {
+  min-height: 75px;
+  padding-bottom: 56.25%;
+}
+
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -3660,6 +3676,190 @@ figcaption {
   display: contents;
 }
 
+.tr-rough-hero-left {
+  height: 225px;
+  margin: -.2vh 0 0 -1vw;
+  display: none;
+  position: absolute;
+  inset: 0% auto auto 0%;
+}
+
+.text-block-42 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  margin-top: 16px;
+  margin-bottom: -4px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dst-hero-button {
+  background-color: #0000;
+  border: 1px solid #f88a15;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  padding-left: 8px;
+  display: flex;
+}
+
+.dst-hero-button:hover {
+  background-color: #f88a15;
+}
+
+.dst-hero-text {
+  color: #194363;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.distillery-hero-section {
+  background-color: #000;
+  background-image: url({{ 'distillery-hero-BW.jpg' | asset_url }});
+  background-position: 100% 0;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 101vh;
+  margin-top: -54px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button-text {
+  color: #194363;
+  text-align: center;
+  letter-spacing: 8px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  position: absolute;
+}
+
+.image-33 {
+  display: none;
+}
+
+.hero-video {
+  z-index: 0;
+  object-fit: fill;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: auto;
+  height: 700px;
+  min-height: auto;
+  margin-top: -55px;
+  display: none;
+  position: fixed;
+  inset: auto 0% 0 auto;
+}
+
+.dst-hero-div {
+  z-index: 5;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  margin-top: -63px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+  inset: 0 0% 0% auto;
+}
+
+.dst-hero-div-announcement {
+  z-index: 5;
+  background-color: #f88a15;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  margin-top: -89px;
+  margin-bottom: 0;
+  margin-left: -77%;
+  padding-bottom: 0;
+  display: none;
+  position: relative;
+  inset: 0 0% 0% auto;
+}
+
+@media screen and (min-width: 1920px) {
+  .tr-rough-hero-left {
+    height: 22vw;
+  }
+
+  .text-block-42 {
+    color: #000;
+  }
+
+  .dst-hero-button {
+    border-width: .15vw;
+    width: 25vw;
+    height: 3.5vw;
+  }
+
+  .dst-hero-button:hover {
+    background-color: #f88a15;
+  }
+
+  .dst-hero-text {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+
+  .hero-button-text {
+    color: #194363;
+    letter-spacing: .5vw;
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+
+  .dst-hero-div {
+    background-color: #fff;
+    width: 50vw;
+    height: 18vw;
+    margin-top: -171px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .dst-hero-div-announcement {
+    background-color: #f88a15;
+    background-image: none;
+    width: 20vw;
+    height: 10vw;
+    margin-top: 146px;
+    margin-bottom: 0;
+    margin-left: -81%;
+    padding-bottom: 0;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -4231,6 +4431,49 @@ figcaption {
     width: 8.4rem;
     height: 3.6rem;
   }
+
+  .tr-rough-hero-left {
+    height: 205px;
+    margin-top: -3px;
+  }
+
+  .text-block-42 {
+    text-align: center;
+    width: 200px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .dst-hero-text {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .distillery-hero-section {
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 600px;
+  }
+
+  .hero-button-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .dst-hero-div {
+    align-items: center;
+    width: 450px;
+    height: 150px;
+    margin: 200px auto 0 21%;
+    position: relative;
+  }
+
+  .dst-hero-div-announcement {
+    width: 250px;
+    height: 125px;
+    margin: -146px auto 0 -6px;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4691,6 +4934,49 @@ figcaption {
     align-items: flex-start;
     width: 8.7rem;
   }
+
+  .tr-rough-hero-left {
+    height: 150px;
+    margin-top: 0;
+  }
+
+  .dst-hero-button {
+    width: 25vw;
+    height: 4vw;
+    margin-top: 2vw;
+    padding-left: .5vw;
+    font-size: 40vw;
+  }
+
+  .dst-hero-text {
+    margin-bottom: 0;
+    font-size: 2.75vw;
+    line-height: 2.75vw;
+  }
+
+  .distillery-hero-section {
+    max-height: 500px;
+    margin-top: auto;
+  }
+
+  .hero-button-text {
+    letter-spacing: .5vw;
+    font-size: 2vw;
+    line-height: 1vw;
+  }
+
+  .dst-hero-div {
+    width: 55vw;
+    height: 20vw;
+    margin-left: 21%;
+    padding-bottom: 10px;
+  }
+
+  .dst-hero-div-announcement {
+    width: 45vw;
+    height: 20vw;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5028,6 +5314,79 @@ figcaption {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .tr-rough-hero-left {
+    height: 125px;
+    display: none;
+  }
+
+  .text-block-42 {
+    margin-top: -2px;
+    margin-left: 20px;
+  }
+
+  .dst-hero-button {
+    width: 48vw;
+    height: 8vw;
+    margin-top: 0;
+    padding-left: .5vw;
+  }
+
+  .dst-hero-text {
+    color: #152d42;
+    letter-spacing: .05vw;
+    margin-top: 0;
+    margin-bottom: 3vw;
+    font-size: 3.75vw;
+    line-height: 5vw;
+  }
+
+  .distillery-hero-section {
+    background-position: 50%;
+    background-attachment: scroll;
+    justify-content: center;
+    align-self: flex-start;
+    width: 100vw;
+    height: 85vh;
+    max-height: none;
+    padding-bottom: 10vw;
+  }
+
+  .hero-button-text {
+    letter-spacing: 1vw;
+    font-size: 3vw;
+    line-height: 1vw;
+  }
+
+  .image-33 {
+    height: 30vw;
+    margin-top: -26vw;
+    display: none;
+  }
+
+  .dst-hero-div {
+    flex: 0 auto;
+    align-self: auto;
+    width: 85vw;
+    height: 30vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    position: relative;
+    left: 0;
+  }
+
+  .dst-hero-div-announcement {
+    width: 275px;
+    height: 30vw;
+    margin-left: -7vw;
+    margin-right: 5vw;
+    padding-bottom: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }
 
